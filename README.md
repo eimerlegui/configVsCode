@@ -1,6 +1,6 @@
 # configVsCode
 
-##Shortcuts
+## Shortcuts
 
 ```
 [
@@ -377,7 +377,7 @@
 ]
 ```
 
-##Snippets vue & js
+## Snippets vue & js
 
 ```
 {
