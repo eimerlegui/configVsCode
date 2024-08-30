@@ -543,3 +543,218 @@
 	},
 }
 ```
+
+## Styles
+```
+"workbench.colorCustomizations": {
+	"[One Dark Pro Darker]": {
+		"editor.background": "#060b1a",
+		"sideBar.background": "#121624",
+		"sideBarSectionHeader.background": "#060b1a",
+		"activityBar.background": "#060b1a",
+		"statusBar.background": "#060b1a",
+		"titleBar.activeBackground": "#060b1a",
+		"editorGroupHeader.tabsBackground": "#060b1a",
+		"tab.inactiveBackground": "#121624",
+		"tab.activeBackground": "#060b1a",
+		"terminal.background": "#060b1a"
+	},
+	"[Dracula Theme]": {
+		"editor.background": "#060b1a",
+		"sideBar.background": "#080d1e",
+		"sideBarSectionHeader.background": "#060b1a",
+		"activityBar.background": "#060b1a",
+		"activityBar.inactiveForeground": "#ffffff",
+		// "statusBar.background": "#060b1a",
+		"titleBar.activeBackground": "#060b1a",
+		"editorGroupHeader.tabsBackground": "#060b1a",
+		"tab.inactiveBackground": "#060b1a",
+		"tab.activeBackground": "#1a2033",
+		"tab.activeBorder": "#BD93F9",
+		"tab.activeBorderTop": "#0fb100",
+		"tab.activeForeground": "#ffffff",
+		"terminal.background": "#060b1a"
+	}
+},
+"editor.tokenColorCustomizations": {
+	"[*Light*]": {
+		"textMateRules": [
+			{
+				"scope": "ref.matchtext",
+				"settings": {
+					"foreground": "#000"
+				}
+			}
+		]
+	},
+	"[*Dark*]": {
+		"textMateRules": [
+			{
+				"scope": "ref.matchtext",
+				"settings": {
+					"foreground": "#fff"
+				}
+			}
+		]
+	},
+	"[Dracula Theme]": {
+		"variables": "#d5cdf8",
+		"strings": "#3be766",
+		"textMateRules": [
+			{
+				"scope": [
+					"punctuation.definition.string.begin",
+					"punctuation.definition.string.end"
+				],
+				"settings": {
+					"foreground": "#3be766",
+					"fontStyle": "bold"
+				}
+			},
+			{
+				"scope": [
+					"entity.name.function"
+				],
+				"settings": {
+					"fontStyle": "italic bold"
+				}
+			},
+			{
+				"scope": [
+					"variable.other.object.js"
+				],
+				"settings": {
+					"foreground": "#BD93F9",
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": [
+					"entity.name.tag"
+				],
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": [
+					"entity.other.attribute-name"
+				],
+				"settings": {
+					"foreground": "#FFB86C",
+					"fontStyle": "italic"
+				}
+			}
+		]
+	},
+	"[One Dark Pro Darker]": {
+		"strings": "#0bd65f",
+		"functions": "#41c1f8",
+		"variables": "#eaeaea",
+		"textMateRules": [
+			{
+				"scope": [
+					"entity.name.tag.block.any.html",
+					"meta.tag.block.any.html",
+					"text.html.vue-html",
+					"source.vue",
+					"entity.name.tag"
+				],
+				"settings": {
+					"foreground": "#37aee0",
+					"fontStyle": "bold"
+				}
+			},
+			{
+				"scope": [
+					"variable.language.this.js",
+					"meta.block.js",
+					"meta.method.declaration.js",
+					"meta.objectliteral.js",
+					"meta.object.member.js",
+					"meta.objectliteral.js",
+					"meta.export.default.js",
+					"source.js",
+					"source.vue"
+				],
+				"settings": {
+					"foreground": "#ec7c4c",
+					"fontStyle": "italic bold"
+				}
+			},
+			{
+				"scope": [
+					"variable.other.object.property.js",
+					"meta.function-call.js",
+					"meta.block.js",
+					"meta.method.declaration.js",
+					"meta.objectliteral.js",
+					"meta.object.member.js",
+					"meta.objectliteral.js",
+					"meta.export.default.js",
+					"source.js",
+					"source.vue"
+				],
+				"settings": {
+					"foreground": "#e6e6e6",
+					"fontStyle": "italic"
+				}
+			}
+		]
+	},
+	"textMateRules": []
+},
+"editor.semanticTokenColorCustomizations": {
+	"enabled": true,
+	"[One Dark Pro Darker]": {
+		"rules": {
+			"method": "#41c1f8",
+			"property": "#e6e6e6"
+		}
+	}
+},
+"peacock.favoriteColors": [
+	{
+		"name": "Angular Red",
+		"value": "#dd0531"
+	},
+	{
+		"name": "Azure Blue",
+		"value": "#007fff"
+	},
+	{
+		"name": "JavaScript Yellow",
+		"value": "#f9e64f"
+	},
+	{
+		"name": "Mandalorian Blue",
+		"value": "#1857a4"
+	},
+	{
+		"name": "Node Green",
+		"value": "#215732"
+	},
+	{
+		"name": "React Blue",
+		"value": "#61dafb"
+	},
+	{
+		"name": "Something Different",
+		"value": "#832561"
+	},
+	{
+		"name": "Svelte Orange",
+		"value": "#ff3d00"
+	},
+	{
+		"name": "Vue Green",
+		"value": "#42b883"
+	}
+],
+"indentRainbow.colors": [
+	"rgba(255,255,64,0.004)",
+	"rgba(127,255,127,0.004)",
+	"rgba(255,127,255,0.004)",
+	"rgba(79,236,236,0.004)"
+],
+```
