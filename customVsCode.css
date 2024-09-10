@@ -1,6 +1,7 @@
 /* Variables */
 body {
 	--background: #060b1a;
+	--primary: #BD93F9;
 }
 
 /* Sidebar title */
@@ -25,6 +26,19 @@ body {
 	content: 'Eimer Leguizamón';
 }
 
+
+
+
+/* Tabs */
+.tab {
+	border-radius: 10px 10px 0px 0px !important;
+	border-right: none !important;
+	overflow: hidden !important;
+}
+.tab.active {
+	background-image: linear-gradient(#1d1d21 0%, var(--background) 100%) !important;
+	border-top: 1px solid var(--primary);
+}
 
 
 
@@ -141,6 +155,13 @@ body {
 }
 .scm-editor, .scm-editor .monaco-editor.no-user-select, .monaco-editor.no-user-select .overflow-guard {
 	border-radius: 16px !important;
+}
+
+
+
+.part.statusbar {
+	background-color: var(--background) !important;
+	border-top: 1px solid var(--primary);
 }
 
 
