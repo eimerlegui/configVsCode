@@ -4,6 +4,12 @@ body {
 	--primary: #BD93F9;
 }
 
+
+/* Numeración izquierda */
+.line-numbers.lh-odd {
+	opacity: 0.2 !important;
+}
+
 /* Sidebar title */
 .composite.title {
 	display: flex !important;
@@ -23,7 +29,14 @@ body {
 	display: inline-block;
 	margin-right: 6px;
 	font-size: 1rem;
-	content: 'Eimer Leguizamón';
+	content: '⚔ Eimer Leguizamón ⚔';
+}
+
+
+/* Sombra menu principal */
+.vertical .monaco-scrollable-element .split-view-container .visible .monaco-grid-branch-node .horizontal .monaco-scrollable-element .split-view-container > .split-view-view:nth-child(3) {
+	box-shadow: -8px 0px 13px 0px #020310c4;
+	z-index: 11;
 }
 
 
@@ -38,6 +51,7 @@ body {
 .tab.active {
 	background-image: linear-gradient(#1d1d21 0%, var(--background) 100%) !important;
 	border-top: 1px solid var(--primary);
+	animation: float 2s ease-in-out infinite;
 }
 
 
@@ -161,7 +175,21 @@ body {
 
 .part.statusbar {
 	background-color: var(--background) !important;
-	border-top: 1px solid var(--primary);
+}
+.part.statusbar div {
+	opacity: 0.5 !important;
+}
+.monaco-tl-indent .indent-guide.active {
+	border-color: var(--primary) !important;
+}
+.decorationsOverviewRuler {
+	display: none !important;
+}
+.monaco-scrollable-element {
+	background: var(--background) !important;
+}
+.monaco-workbench .part.sidebar>.title {
+	background: var(--background) !important;
 }
 
 
@@ -198,4 +226,17 @@ body {
 	background-position: center center !important;
 	background-size: contain !important;
 	width: 60% !important;
+
+
+}
+@keyframes float {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(5px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
 }
