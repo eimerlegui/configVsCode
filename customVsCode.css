@@ -1,7 +1,8 @@
 /* Variables */
 body {
-	--background: #060b1a;
-	--primary: #BD93F9;
+	--background: #10141e;
+	--primary: #52367a;
+	--border: #b2b2b22e;
 }
 
 
@@ -62,7 +63,7 @@ body {
 	/* position: absolute !important;
 	right: 1px !important;
 	width: 8px !important; */
-	background: #3a2967 !important;
+	background: var(--primary) !important;
 	/* left: auto !important; */
 }
 
@@ -72,7 +73,7 @@ body {
 /* Busqueda en editor */
 .editor-widget, .find-widget {
 	background-image: linear-gradient(#000000 0%, #0a0c26 100%) !important;
-	border: 1px solid #b2b2b22e !important;
+	border: 1px solid var(--border) !important;
 	border-radius: 16px !important;
 }
 .editor-widget, .find-widget .monaco-inputbox, .idle {
@@ -93,10 +94,13 @@ body {
 	top: 50% !important;
 	box-shadow: 0px 8px 20px rgba(0, 0, 0, .45) !important;
 	padding: 10px 10px 18px 10px !important;
-	background-image: linear-gradient(#000000 0%, #0a0c26 100%) !important;
-	backdrop-filter: blur(3px) !important;
+	/* background-image: linear-gradient(#000000 0%, #0a0c26 100%) !important; */
+	/* backdrop-filter: blur(3px) !important; */
 	border-radius: 20px !important;
-	border: 1px solid #b2b2b22e !important;
+	border: 1px solid var(--border) !important;
+}
+.quick-input-widget .quick-input-list .monaco-list .monaco-scrollable-element {
+	background: transparent !important;
 }
 .quick-input-widget .monaco-list-row {
 	border-radius: 16px !important;
@@ -111,11 +115,11 @@ body {
 /* List hover */
 .quick-input-widget .monaco-list-row:hover {
 	background: rgb(9, 0, 37) !important;
-	border: 1px solid #b2b2b22e !important;
+	border: 1px solid var(--border) !important;
 }
 .quick-input-widget .monaco-list-row.focused {
 	background: rgb(9, 0, 37) !important;
-	border: 1px solid #b2b2b22e !important;
+	border: 1px solid var(--border) !important;
 }
 /* Command palette text input */
 .quick-input-filter .monaco-inputbox {
@@ -135,12 +139,12 @@ body {
 	margin: 1px !important;
 }
 .explorer-folders-view .monaco-list-row:hover {
-	background: rgb(9, 0, 37) !important;
-	border: 1px solid #b2b2b22e !important;
+	background: var(--background) !important;
+	border: 1px solid var(--border) !important;
 }
 .explorer-folders-view .monaco-list-row.focused {
-	background: rgb(9, 0, 37) !important;
-	border: 1px solid #b2b2b22e !important;
+	background: var(--background) !important;
+	border: 1px solid var(--border) !important;
 }
 .explorer-folders-view .monaco-list-row.selected {
 	box-shadow: inset 0px 0px 15px 6px #2b0064;
@@ -152,11 +156,20 @@ body {
 }
 .monaco-list-row:hover {
 	background: rgb(9, 0, 37) !important;
-	border: 1px solid #b2b2b22e !important;
+	border: 1px solid var(--border) !important;
 }
 .monaco-list-row.focused {
 	background: rgb(9, 0, 37) !important;
-	border: 1px solid #b2b2b22e !important;
+	border: 1px solid var(--border) !important;
+}
+
+
+/* Lista del tree que se pone sticky */
+.monaco-list .monaco-scrollable-element .monaco-tree-sticky-container {
+	background: var(--background) !important;
+}
+.monaco-list .monaco-scrollable-element .monaco-tree-sticky-container .monaco-tree-sticky-row {
+	background: var(--background) !important;
 }
 
 
